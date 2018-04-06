@@ -1,0 +1,17 @@
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cardCard {
+  border: 2px solid rgb(104, 223, 253);
+  min-width: 150px;
+  max-width: 150px;
+  min-height: 150px;
+  margin-top: 25px;
+  padding: 5px;
+  background-color: black;
+  color: black;
+}

@@ -5,6 +5,7 @@ import { Route } from 'react-router-dom';
 
 import Projects from './Components/Projects.js';
 import Actions from './Components/Actions.js';
+import ProjectDetail from './Components/ProjectDetail.js';
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <Route exact path="/projects" component={Projects} />
+        <Route exact path="/projects/:id" component={ProjectDetail} />
       </div>
     );
   }
