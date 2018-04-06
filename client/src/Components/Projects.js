@@ -40,9 +40,16 @@ class Projects extends Component {
               <Row key={index} className="cardRow">
                 <Col className="cardCol d-flex align-items-stretch">
                   <Card className="cardCard">
-                    <CardBody className="cardBody">
-                      <CardTitle>{project.name}</CardTitle>
-                    </CardBody>
+                    <Link
+                      to={{
+                        pathname: `/projects/${project.id}}`,
+                        state: { currentProject: project },
+                      }}
+                    >
+                      <CardBody className="cardBody">
+                        <CardTitle>{project.name}</CardTitle>
+                      </CardBody>
+                    </Link>
                   </Card>
                 </Col>
               </Row>
