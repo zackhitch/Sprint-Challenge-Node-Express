@@ -13,9 +13,10 @@ class ProjectDetail extends Component {
   }
 
   render() {
+    const { name, description, notes, completed } = this.props.currentProject;
     return (
       <div>
-        <div>{this.state}</div>
+        <div>{name}</div>
       </div>
     );
   }
